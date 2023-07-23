@@ -41,6 +41,8 @@ public class Login extends AppCompatActivity {
                 if (strPassword.equals(contra)){
                     /*Intent intent = new Intent(this, MainActivity.class);
                     startActivity(intent);*/
+                    Intent intent = new Intent(Login.this, Notas.class);
+                    startActivity(intent);
                     Toast.makeText(getApplicationContext(), "Las contrasenas son iguales", Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getApplicationContext(), "Las contrasenas NO son iguales", Toast.LENGTH_SHORT).show();
@@ -71,6 +73,8 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onAuthenticationSucceeded(BiometricPrompt.AuthenticationResult result) {
                         // La autenticación biométrica fue exitosa
+                        Intent intent = new Intent(Login.this, Notas.class);
+                        startActivity(intent);
                         Toast.makeText(getApplicationContext(), "Hola Derek, tas fuerte!", Toast.LENGTH_SHORT).show();
                     }
 
