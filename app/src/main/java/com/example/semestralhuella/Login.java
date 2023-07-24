@@ -75,7 +75,7 @@ public class Login extends AppCompatActivity {
                         // La autenticación biométrica fue exitosa
                         Intent intent = new Intent(Login.this, Notas.class);
                         startActivity(intent);
-                        Toast.makeText(getApplicationContext(), "Hola Derek, tas fuerte!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Bienvenido", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override

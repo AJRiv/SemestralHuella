@@ -2,9 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#e3dac9">
 
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notas "
+        android:layout_marginLeft="10sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="40sp"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -28,6 +38,10 @@
         android:layout_height="wrap_content"
         android:text="Agregar Nota"
         android:layout_gravity="bottom"
-        android:padding="16dp" />
+        android:backgroundTint="#ff7e00"
+        android:fontFamily="@font/pt_sans_bold"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
 
 </LinearLayout>

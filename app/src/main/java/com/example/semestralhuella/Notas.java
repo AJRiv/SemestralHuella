@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -63,9 +64,11 @@ public class Notas extends AppCompatActivity {
     private void addNoteToLayout(int position, String noteText) {
         TextView textViewNote = new TextView(this);
         textViewNote.setText(noteText);
-        textViewNote.setTextColor(getResources().getColor(android.R.color.white)); // Color del texto
-        textViewNote.setBackgroundColor(getResources().getColor(android.R.color.darker_gray)); // Color del fondo
-        textViewNote.setPadding(16, 16, 16, 16);
+        Typeface typeface = getResources().getFont(R.font.poppins_light); //tipo de letra
+        textViewNote.setTypeface(typeface);
+        textViewNote.setTextColor(getResources().getColor(android.R.color.black)); // Color del texto
+        textViewNote.setBackgroundColor(getResources().getColor(R.color.naranja)); // Color del fondo
+        textViewNote.setPadding(16, 50, 16, 50);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT

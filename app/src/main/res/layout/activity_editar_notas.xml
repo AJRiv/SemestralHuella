@@ -2,19 +2,42 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#e3dac9">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nota"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="40sp"/>
     <EditText
         android:id="@+id/editTextNote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escribe tu nota aquí" />
+        android:layout_below="@+id/textView"
+        android:hint="Escribe tu nota aquí"
+        android:fontFamily="@font/poppins_light"
+        android:backgroundTint="#ff9e40"
+        android:textStyle="bold"
+        />
 
     <Button
         android:id="@+id/buttonSaveNote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextNote"
-        android:text="Guardar" />
+        android:layout_marginTop="20sp"
+        android:text="Guardar"
+        android:backgroundTint="#ff7e00"
+        android:fontFamily="@font/pt_sans_bold"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+
 
 </RelativeLayout>

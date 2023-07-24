@@ -1,23 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="#e3dac9"
     tools:context=".Onboarding">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="41dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATA"
+            android:fontFamily="@font/bungee"
+            android:textColor="@color/black"
+            android:textSize="45sp"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAFE"
+            android:fontFamily="@font/bungee_outline"
+            android:textColor="@color/black"
+            android:textSize="45sp"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="299dp"
+        android:layout_height="235dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/log" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bienvenido!\nAgrega tu nombre de usuario y contrasena" />
+        android:text="Agrega tu nombre de usuario y contraseña"
+        android:fontFamily="@font/calistoga"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/userName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#ff9e40"
+        android:fontFamily="@font/poppins_light"
         android:hint="Username"
         android:inputType="text" />
 
@@ -26,12 +68,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:fontFamily="@font/poppins_light"
+        android:backgroundTint="#ff9e40"
+
         android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/btnGuardar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guardar" />
+        android:text="Guardar"
+        android:backgroundTint="#ff7e00"
+        android:fontFamily="@font/pt_sans_bold"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
 
 </LinearLayout>
