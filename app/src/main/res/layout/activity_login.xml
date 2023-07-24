@@ -1,35 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="#e3dac9"
     tools:context=".Login">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="41dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATA"
+        android:fontFamily="@font/bungee"
+        android:textColor="@color/black"
+        android:textSize="45sp"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAFE"
+        android:fontFamily="@font/bungee_outline"
+        android:textColor="@color/black"
+        android:textSize="45sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="299dp"
+        android:layout_height="235dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/log" />
 
     <TextView
         android:id="@+id/msg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Iniciar" />
+        android:fontFamily="@font/calistoga"
+        android:gravity="center"
+        android:text="BIENVENIDO!"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:backgroundTint="#ff9e40"
+        />
 
     <Button
         android:id="@+id/btnIniciar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Iniciar" />
+        android:backgroundTint="#ff7e00"
+        android:fontFamily="@font/pt_sans_bold"
+        android:padding="10dp"
+        android:text="Iniciar"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/btnHuella"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Huella" />
+        android:text="Huella"
+        android:backgroundTint="#ff7e00"
+        android:fontFamily="@font/pt_sans_bold"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
 
 </LinearLayout>
