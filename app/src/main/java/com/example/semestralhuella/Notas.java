@@ -68,7 +68,7 @@ public class Notas extends AppCompatActivity {
         textViewNote.setTypeface(typeface);
         textViewNote.setTextColor(getResources().getColor(android.R.color.black)); // Color del texto
         textViewNote.setBackgroundColor(getResources().getColor(R.color.naranja)); // Color del fondo
-        textViewNote.setPadding(16, 50, 16, 50);
+        textViewNote.setPadding(16, 49, 16, 49);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
