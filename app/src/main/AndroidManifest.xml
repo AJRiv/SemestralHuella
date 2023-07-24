@@ -20,7 +20,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".EditarNotas"
+            android:exported="true" />
+        <activity
+            android:name=".Notas"
+            android:exported="true" />
+        <activity
+            android:name=".Onboarding"
+            android:exported="true" />
     </application>
 
 </manifest>
